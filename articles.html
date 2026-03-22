@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles Archive | Adesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="articles">
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="header-row">
+          <a class="brand" href="./index.html" id="brand-name"></a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./index.html">Home</a>
+            <a href="./articles.html">Articles</a>
+            <a href="./reading.html">My Publications</a>
+            <a href="./ai.html">AI and LLMs</a>
+            <a href="./learning.html">Learning</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="archive-hero">
+          <p class="section-label">Archive</p>
+          <h1>Reading Shelf</h1>
+          <p class="archive-intro">A complete list of the articles I am reading and want to keep handy.</p>
+        </section>
+        <section class="section archive-section">
+          <div class="archive-list" id="archive-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./archive.js"></script>
+  </body>
+</html>

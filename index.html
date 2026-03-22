@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adesh | Software Engineer</title>
+    <meta
+      name="description"
+      content="Staff Engineer homepage with resume, links, reading, and engineering notes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <div class="header-row">
+          <a class="brand" href="./index.html" id="brand-name"></a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./articles.html">Articles</a>
+            <a href="./reading.html">My Publications</a>
+            <a href="./ai.html">AI and LLMs</a>
+            <a href="./learning.html">Learning</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="hero-role">Software Engineer</p>
+            <h1 id="hero-title"></h1>
+            <p class="hero-accent" id="hero-accent"></p>
+            <div class="hero-summary" id="hero-summary"></div>
+          </div>
+        </section>
+
+        <section class="section dual-column" id="articles">
+          <div class="column">
+            <div class="section-head">
+              <h2>Reading Shelf</h2>
+              <a href="./articles.html">Archive</a>
+            </div>
+            <p class="section-intro">Articles I am currently reading and want to keep handy.</p>
+            <div class="compact-list" id="article-preview"></div>
+          </div>
+
+          <div class="column" id="reading">
+            <div class="section-head">
+              <h2>My publications</h2>
+              <a href="./reading.html">Archive</a>
+            </div>
+            <p class="section-intro">Articles and publications I have written or published.</p>
+            <div class="compact-list" id="reading-preview"></div>
+          </div>
+        </section>
+
+        <section class="section" id="ai-llms">
+          <div class="section-head block-head">
+            <div>
+              <p class="section-label">AI and LLMs</p>
+              <h2>AI Systems and Applied Intelligence.</h2>
+            </div>
+            <a href="./ai.html">Overview</a>
+          </div>
+          <div class="note-grid" id="ai-llm-preview"></div>
+        </section>
+
+        <section class="section" id="learning">
+          <div class="section-head block-head">
+            <div>
+              <p class="section-label">Engineering Practice</p>
+              <h2>System, Low Level Design and Problem Solving.</h2>
+            </div>
+            <a href="./learning.html">Overview</a>
+          </div>
+          <div class="learning-grid" id="learning-preview"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer contact-only" id="contact">
+        <div class="footer-contact-row">
+          <h3>Contact</h3>
+          <div class="footer-links footer-links-inline" id="footer-social-links"></div>
+          <a href="#top">Back to top</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
