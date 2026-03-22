@@ -222,7 +222,10 @@ a:hover {
 }
 
 .section-intro + .compact-list,
-.archive-intro + .archive-list {
+.archive-intro + .archive-list,
+.section-intro + .featured-grid,
+.section-intro + .note-grid,
+.section-intro + .learning-grid {
   margin-top: 18px;
 }
 
@@ -610,7 +613,10 @@ a:hover {
   }
 
   .section-intro + .compact-list,
-  .archive-intro + .archive-list {
+  .archive-intro + .archive-list,
+  .section-intro + .featured-grid,
+  .section-intro + .note-grid,
+  .section-intro + .learning-grid {
     margin-top: 14px;
   }
 
