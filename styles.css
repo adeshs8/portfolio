@@ -396,6 +396,7 @@ a:hover {
 
   .site-nav {
     gap: 12px 16px;
+    width: 100%;
   }
 
   .site-nav a,
@@ -409,6 +410,10 @@ a:hover {
   .link-list-inline,
   .footer-links-inline {
     gap: 12px 14px;
+  }
+
+  .section-head {
+    gap: 10px;
   }
 
   .list-item,
@@ -432,6 +437,16 @@ a:hover {
     padding: 18px;
   }
 
+  .learning-card ul,
+  .note-card ul {
+    padding-left: 16px;
+  }
+
+  .learning-card li,
+  .note-card li {
+    margin-bottom: 8px;
+  }
+
   .card-head {
     flex-direction: column;
     align-items: flex-start;
@@ -443,9 +458,9 @@ a:hover {
   }
 
   .footer-contact-row .footer-links-inline {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px 14px;
   }
 
   .footer-contact-row > a:last-child {
@@ -461,7 +476,7 @@ a:hover {
 
 @media (max-width: 480px) {
   .site-shell {
-    width: min(calc(100% - 18px), var(--max-width));
+    width: min(calc(100% - 16px), var(--max-width));
   }
 
   .site-header {
@@ -473,32 +488,33 @@ a:hover {
   }
 
   .site-nav {
-    gap: 10px 14px;
+    gap: 8px 12px;
   }
 
   .site-nav a {
-    font-size: 0.88rem;
+    font-size: 0.84rem;
   }
 
   .hero,
   .archive-hero,
   .section {
-    padding: 26px 0;
+    padding: 24px 0;
   }
 
   .hero h1,
   .archive-hero h1 {
-    font-size: 2.15rem;
-    line-height: 1.08;
+    font-size: 1.92rem;
+    line-height: 1.1;
   }
 
   .hero-accent {
-    margin-top: 18px;
-    font-size: 1rem;
+    margin-top: 16px;
+    font-size: 0.96rem;
+    line-height: 1.35;
   }
 
   .hero-summary {
-    margin-top: 24px;
+    margin-top: 20px;
   }
 
   .hero-summary p,
@@ -507,16 +523,20 @@ a:hover {
   .list-item-subtitle,
   .learning-card p,
   .note-card p {
-    font-size: 0.92rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.65;
   }
 
   .section h2 {
-    font-size: 1.26rem;
+    font-size: 1.18rem;
   }
 
   .block-head {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+  }
+
+  .section-head + .section-intro {
+    margin-top: 10px;
   }
 
   .section-intro + .compact-list,
@@ -556,14 +576,17 @@ a:hover {
   }
 
   .footer-contact-row {
-    gap: 10px;
+    gap: 12px;
+    padding: 0 12px;
   }
 
   .footer-contact-row .footer-links-inline {
-    gap: 8px;
+    gap: 8px 12px;
   }
 
-  .footer-contact-row a {
+  .footer-contact-row a,
+  .link-list a,
+  .footer-links a {
     font-size: 0.92rem;
   }
 }
