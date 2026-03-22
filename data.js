@@ -17,6 +17,26 @@ const siteData = {
     { label: "Substack", href: "https://substack.com/@adeshs" },
     { label: "Medium", href: "https://medium.com/@adeshsrivastava0" }
   ],
+  featuredWork: [
+    {
+      meta: "Featured Work",
+      title: "Fly.io Distributed Systems Challenge Solutions",
+      subtitle:
+        "A Maelstrom-based set of distributed systems solutions covering broadcast, replication, fault tolerance, and coordination patterns under failure.",
+      href: "https://github.com/adeshs8/maelstrom-work",
+      context: "An implementation-focused project that showcases practical distributed-systems thinking beyond interview-style design notes.",
+      cta: "View project"
+    },
+    {
+      meta: "Featured Work",
+      title: "pydantic-cli",
+      subtitle:
+        "A typed CLI project built around Pydantic, aimed at practical Python tooling and AI-adjacent developer workflows.",
+      href: "https://github.com/adeshs8/pydantic-cli",
+      context: "A smaller but sharp project that highlights developer experience, type safety, and practical tool-building.",
+      cta: "View project"
+    }
+  ],
   articles: [
     {
       meta: "Jan 2026",

@@ -252,10 +252,15 @@ a:hover {
 }
 
 .learning-grid,
-.note-grid {
+.note-grid,
+.featured-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
+}
+
+.featured-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .learning-card,
@@ -264,6 +269,41 @@ a:hover {
   border: 1px solid var(--line);
   padding: 20px;
   min-width: 0;
+}
+
+.featured-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  padding: 24px;
+}
+
+.featured-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.featured-meta-row .item-meta {
+  margin-bottom: 0;
+}
+
+.featured-card h3 {
+  margin: 14px 0 16px;
+  font-family: "Source Serif 4", serif;
+  font-size: 1.42rem;
+  line-height: 1.18;
+}
+
+.featured-card h3 a {
+  color: var(--text);
+}
+
+.featured-summary {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .card-head {
@@ -338,6 +378,28 @@ a:hover {
   color: var(--text);
 }
 
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--text);
+  opacity: 0.9;
+  transition: opacity 140ms ease;
+}
+
+.social-icon-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.social-icon-link svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 @media (max-width: 960px) {
   .site-shell {
     width: min(calc(100% - 28px), var(--max-width));
@@ -346,7 +408,8 @@ a:hover {
   .hero,
   .dual-column,
   .learning-grid,
-  .note-grid {
+  .note-grid,
+  .featured-grid {
     grid-template-columns: 1fr;
   }
 
@@ -427,13 +490,15 @@ a:hover {
   }
 
   .learning-grid,
-  .note-grid {
+  .note-grid,
+  .featured-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .learning-card,
-  .note-card {
+  .note-card,
+  .featured-card {
     padding: 18px;
   }
 
@@ -451,6 +516,11 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+
+  .featured-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .footer-contact-row .footer-links {
@@ -559,8 +629,19 @@ a:hover {
   }
 
   .learning-card,
-  .note-card {
+  .note-card,
+  .featured-card {
     padding: 16px;
+  }
+
+  .featured-card h3 {
+    font-size: 1.2rem;
+    margin: 12px 0 14px;
+  }
+
+  .featured-summary {
+    font-size: 0.94rem;
+    line-height: 1.65;
   }
 
   .learning-card h3,
@@ -588,5 +669,10 @@ a:hover {
   .link-list a,
   .footer-links a {
     font-size: 0.92rem;
+  }
+
+  .social-icon-link {
+    width: 18px;
+    height: 18px;
   }
 }
