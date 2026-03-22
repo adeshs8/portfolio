@@ -45,6 +45,12 @@ const siteData = {
   ],
   reading: [
     {
+      meta: "Mar 2026",
+      title: "Fly.io Distributed Systems Challenge Solutions",
+      subtitle: "My Maelstrom-based solutions for Fly.io's distributed systems challenges, covering replication, broadcast, fault tolerance, and coordination patterns.",
+      href: "https://github.com/adeshs8/maelstrom-work"
+    },
+    {
       meta: "Mar 2020",
       title: "How to Write a Timestamp-Based Task Scheduler",
       subtitle: "A design walkthrough for building a distributed, horizontally scalable scheduler that executes tasks at a predefined time.",
