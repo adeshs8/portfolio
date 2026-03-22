@@ -1,20 +1,7 @@
-# Staff Engineer Portfolio
+# Adesh Srivastava
 
-Static personal site designed for GitHub Pages.
+Backend-focused Software Engineer with around 9 years of experience across architecture, platform thinking, and engineering execution. My work focuses on building systems that scale cleanly, stay reliable under production load, and remain understandable as teams and system complexity grow.
 
-## Files
+I approach engineering with a strong systems lens: clarifying technical direction, improving design quality, and helping teams make stronger architectural decisions in real production environments.
 
-- `index.html`: page structure
-- `styles.css`: visual design and responsive layout
-- `script.js`: profile content and section data
-
-## Customize
-
-Edit the `profile` object in `script.js` to replace placeholder links, writing, work history, and reading lists with your own content.
-
-## Publish on GitHub Pages
-
-1. Push these files to a GitHub repository.
-2. In the repository settings, open `Pages`.
-3. Set the source to deploy from the `main` branch and `/ (root)`.
-4. Save, then wait for GitHub Pages to publish the site.
+This site is a living shelf of what I am reading, what I have written, and the AI, system design, low-level design, and problem-solving notes I keep revisiting.
