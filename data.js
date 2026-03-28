@@ -196,6 +196,18 @@ const siteData = {
       items: [
         {
           meta: "Mar 2026",
+          title: "Making a Large Island",
+          subtitle: "A grid-connectivity problem combining DFS/Union-Find ideas to evaluate how one flip changes connected component size.",
+          href: "https://leetcode.com/problems/making-a-large-island/"
+        },
+        {
+          meta: "Mar 2026",
+          title: "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+          subtitle: "A sliding-window problem that uses monotonic queues to maintain min/max bounds while expanding and shrinking the window.",
+          href: "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/description/"
+        },
+        {
+          meta: "Mar 2026",
           title: "Shortest connection between two actors",
           subtitle: "A BFS search problem over actor-movie graphs to find the shortest path between two actors.",
           href: "https://cs50.harvard.edu/ai/2024/projects/0/degrees/"
